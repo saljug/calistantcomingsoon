@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saljug.github.io/calistantcomingsoon/sitemap.xml 
