@@ -59,34 +59,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11.5px;
 }
 
 .logo-icon {
-    width: 46px;
-    height: 46px;
-    background: white;
+    /* Remove the white background box - the SVG contains everything */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    flex-shrink: 0;
 }
 
 .logo-svg {
-    width: auto;
-    height: 40px;
-    max-width: 40px;
-    object-fit: contain;
+    width: 252px;
+    height: 46px;
+    /* Keep original SVG dimensions to show both C symbol and text */
 }
 
 .logo-text {
-    color: white;
-    font-size: 46px;
-    font-family: 'Geist', sans-serif;
-    font-weight: 600;
-    white-space: nowrap;
-    line-height: 1;
+    /* Hide this since the SVG already contains the text */
+    display: none;
 }
 
 /* Coming soon text */
@@ -114,8 +104,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 16px 32px;
-    min-width: 200px;
+    padding: 16px 48px;
+    min-width: 300px;
     background: transparent;
     border: 1px solid #F5F5F5;
     border-radius: 16px;
@@ -167,18 +157,10 @@ body {
         top: 80px;
     }
     
-    .logo-text {
-        font-size: 32px;
-    }
-    
-    .logo-icon {
-        width: 36px;
-        height: 36px;
-    }
-    
     .logo-svg {
-        height: 32px;
-        max-width: 32px;
+        width: 180px;
+        height: 33px;
+        /* Scale down proportionally */
     }
     
     .coming-soon-text {
@@ -187,8 +169,8 @@ body {
     
     .linkedin-button {
         bottom: 120px;
-        padding: 12px 24px;
-        min-width: 180px;
+        padding: 12px 36px;
+        min-width: 250px;
     }
     
     .button-text {
@@ -216,22 +198,10 @@ body {
         top: 60px;
     }
     
-    .logo-container {
-        gap: 8px;
-    }
-    
-    .logo-text {
-        font-size: 24px;
-    }
-    
-    .logo-icon {
-        width: 32px;
-        height: 32px;
-    }
-    
     .logo-svg {
-        height: 28px;
-        max-width: 28px;
+        width: 140px;
+        height: 26px;
+        /* Scale down proportionally for mobile */
     }
     
     .coming-soon-text {
@@ -240,8 +210,8 @@ body {
     
     .linkedin-button {
         bottom: 100px;
-        padding: 10px 20px;
-        min-width: 160px;
+        padding: 10px 30px;
+        min-width: 200px;
         font-size: 14px;
     }
     
@@ -267,18 +237,10 @@ body {
         height: 900px;
     }
     
-    .logo-text {
-        font-size: 52px;
-    }
-    
-    .logo-icon {
-        width: 52px;
-        height: 52px;
-    }
-    
     .logo-svg {
-        height: 46px;
-        max-width: 46px;
+        width: 300px;
+        height: 55px;
+        /* Scale up proportionally for large screens */
     }
     
     .coming-soon-text {
@@ -286,8 +248,8 @@ body {
     }
     
     .linkedin-button {
-        padding: 18px 36px;
-        min-width: 220px;
+        padding: 18px 60px;
+        min-width: 350px;
     }
     
     .button-text {
